@@ -1,71 +1,342 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR" dir="ltr">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <title>Wayder Tech</title>
-    <meta content="" name="description" />
-    <meta content="" name="testimonials-signature" />
-    <meta content="" name="keywords" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
-      content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
-      name="viewport"
+      name="description"
+      content="Transformamos suas ideias em soluções tecnológicas inovadoras e eficientes."
     />
-    <link href="plugins.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="style.min.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="css.min.css" rel="stylesheet" type="text/css" />
+    <meta
+      name="keywords"
+      content="Saas, Software, Programação, Desenvolvimento de softwares, Criação de aplicativos"
+    />
+    <meta name="author" content="Wayder Tech" />
+    <meta name="email" content="contato@waydertech.com" />
+    <meta name="website" content="https://waydertech.com" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images-prod/favicon.ico" />
+
+    <!-- CSS -->
+    <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet" />
+    <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet" />
+    <link
+      href="assets/css/bootstrap.min.css"
+      id="bootstrap-style"
+      class="theme-opt"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/libs/@mdi/font/css/materialdesignicons.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/libs/@iconscout/unicons/css/line.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/css/style.min.css"
+      id="color-opt"
+      class="theme-opt"
+      rel="stylesheet"
+      type="text/css"
+    />
   </head>
-  <body cz-shortcut-listen="true">
-    <div class="preloader-bg" style="display: none"></div>
-    <div id="preloader" style="display: none">
-      <div id="preloader-status">
-        <div class="preloader-position loader">
-          <span></span>
+
+  <body>
+    <!-- Navbar -->
+    <header id="topnav" class="defaultscroll sticky">
+      <div class="container">
+        <a class="logo" href="index.html">
+          <img
+            src="assets/images-prod/logo-dark-mobile.png"
+            height="50"
+            class="logo-light-mode"
+            alt=""
+          />
+        </a>
+        <div class="menu-extras">
+          <div class="menu-item">
+            <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+              <div class="lines">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </a>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="border-top"></div>
-    <div class="upper-page current" id="home">
-      <div class="border-top">
-        <a class="logo"> <div class="logo-img logo-dark"></div></a>
-      </div>
-      <div class="border-bottom">
-        <div class="social-icons-wrapper">
-          <ul class="social-icons">
-            <li>
-              <a class="fa fa-envelope" href="mailto:john@waydertech.com"></a>
-            </li>
-            <li>
-              <a class="fa fa-instagram" href="https://www.instagram.com/waydertech" target="_blank"></a>
-            </li>
+        <div id="navigation">
+          <ul class="navigation-menu">
+            <li><a href="index.html" class="sub-menu-item">Início</a></li>
+            <li><a href="sobre.html" class="sub-menu-item">Sobre nós</a></li>
+            <li><a href="servicos.html" class="sub-menu-item">Serviços</a></li>
+            <li><a href="contatos.html" class="sub-menu-item">Contatos</a></li>
           </ul>
         </div>
       </div>
-      <div class="center-container-home">
-        <div class="center-block-home">
-          <div class="upper-content">
-            <div class="container sections-home">
-              <div
-                class="drag-intro-hide"
-                id="drag-intro"
-                style="display: none"
-              >
-                <div class="arrows-horizontal"></div>
-                <div class="arrows-vertical"></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-half-170 d-table w-100" id="home">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7 col-md-7">
+            <div class="title-heading mt-4">
+              <h1 class="heading mb-3">Da Ideia ao Sucesso</h1>
+              <p class="para-desc text-muted">
+                Na Wayder Tech, transformamos suas ideias em produtos
+                tecnológicos de sucesso. Desenvolvemos soluções sob medida,
+                combinando inovação, tecnologia e estratégia.
+              </p>
+              <div class="mt-4 pt-2">
+                <a href="servicos.html" class="btn btn-primary m-1"
+                  >Nossos Serviços</a
+                >
               </div>
-              <div id="viewport-wrapper">
-                <div class="fade-position" id="viewport">
-                  <div id="overlay-all">
-                    <div class="non-oblique" id="overlay-img"></div>
-                  </div>
-                  <div class="single-img-bg-wrapper">
-                    <div class="single-img-bg"></div>
-                  </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-5 mt-4 pt-2 mt-sm-0 pt-sm-0">
+            <img src="assets/images-prod/services.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section pt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-12">
+            <div class="features feature-primary text-center">
+              <div class="image position-relative d-inline-block">
+                <i class="uil uil-flip-h h2 text-primary"></i>
+              </div>
+              <div class="content mt-4">
+                <h5>Estratégia e Planejamento</h5>
+                <p class="text-muted mb-0">
+                  Antes de escrever uma linha de código, definimos a melhor
+                  estratégia para transformar sua ideia em um produto
+                  tecnológico viável e escalável.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12 mt-5 mt-sm-0">
+            <div class="features feature-primary text-center">
+              <div class="image position-relative d-inline-block">
+                <i class="uil uil-minus-path h2 text-primary"></i>
+              </div>
+              <div class="content mt-4">
+                <h5>Desenvolvimento Ágil e Eficiente</h5>
+                <p class="text-muted mb-0">
+                  Utilizamos metodologias ágeis e as melhores tecnologias para
+                  garantir um desenvolvimento rápido e eficiente.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12 mt-5 mt-sm-0">
+            <div class="features feature-primary text-center">
+              <div class="image position-relative d-inline-block">
+                <i class="uil uil-layers-alt h2 text-primary"></i>
+              </div>
+              <div class="content mt-4">
+                <h5>Lançamento e Crescimento</h5>
+                <p class="text-muted mb-0">
+                  Após a entrega, seguimos ao seu lado para otimizar e escalar
+                  seu produto, garantindo sucesso no mercado.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Counter Section -->
+    <section class="section bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0">
+            <div class="section-title me-lg-5">
+              <h4 class="title mb-4">
+                Experiência Intuitiva em Qualquer Dispositivo
+              </h4>
+              <p class="text-muted">
+                Criamos interfaces responsivas e intuitivas, garantindo a melhor
+                experiência em qualquer tela, do mobile ao desktop.
+              </p>
+              <a
+                href="contatos.html"
+                target="_blank"
+                class="btn btn-outline-primary"
+                >Entre em Contato<i class="uil uil-angle-right-b"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-6 order-1 order-md-2">
+            <img
+              src="assets/images-prod/integration.png"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img src="assets/images-prod/startup.svg" class="me-md-4" alt="" />
+          </div>
+          <div class="col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+            <div class="section-title ms-lg-5">
+              <h4 class="title mb-4">Alto Desempenho com Máxima Segurança</h4>
+              <p class="text-muted">
+                Desenvolvemos produtos com foco em performance e segurança,
+                garantindo aplicações rápidas e protegidas contra ameaças.
+              </p>
+              <a
+                href="contatos.html"
+                target="_blank"
+                class="btn btn-outline-primary"
+                >Entre em Contato<i class="uil uil-angle-right-b"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer footer-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="footer-py-60">
+              <div class="row">
+                <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                  <a href="#" class="logo-footer">
+                    <img
+                      src="assets/images-prod/logo-dark-mobile.png"
+                      height="50"
+                      alt=""
+                    />
+                  </a>
+                  <p class="mt-4">Nos siga nas redes sociais.</p>
+                  <ul class="list-unstyled social-icon social mb-0 mt-4">
+                    <li class="list-inline-item mb-0">
+                      <a
+                        href="https://www.instagram.com/waydertech"
+                        target="_blank"
+                        class="rounded"
+                        ><i
+                          class="uil uil-instagram align-middle"
+                          title="Instagram"
+                        ></i
+                      ></a>
+                    </li>
+                    <li class="list-inline-item mb-0">
+                      <a href="mailto:contato@waydertech.com" class="rounded"
+                        ><i
+                          class="uil uil-envelope align-middle"
+                          title="Email"
+                        ></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                  <h5 class="footer-head">Empresa</h5>
+                  <ul class="list-unstyled footer-list mt-4">
+                    <li>
+                      <a href="sobre.html" class="text-foot"
+                        ><i class="uil uil-angle-right-b me-1"></i> Sobre nós</a
+                      >
+                    </li>
+                    <li>
+                      <a href="servicos.html" class="text-foot"
+                        ><i class="uil uil-angle-right-b me-1"></i> Serviços</a
+                      >
+                    </li>
+                    <li>
+                      <a href="contatos.html" class="text-foot"
+                        ><i class="uil uil-angle-right-b me-1"></i> Contatos</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                  <h5 class="footer-head">Links</h5>
+                  <ul class="list-unstyled footer-list mt-4">
+                    <li>
+                      <a href="termos-de-uso.html" class="text-foot"
+                        ><i class="uil uil-angle-right-b me-1"></i> Termos de
+                        Uso</a
+                      >
+                    </li>
+                    <li>
+                      <a href="politica-de-privacidade.html" class="text-foot"
+                        ><i class="uil uil-angle-right-b me-1"></i> Políticas de
+                        Privacidade</a
+                      >
+                    </li>
+                    <li>
+                      <a href="politica-de-cookies.html" class="text-foot"
+                        ><i class="uil uil-angle-right-b me-1"></i> Políticas de
+                        Cookies</a
+                      >
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+
+      <div class="footer-py-30 bg-footer text-white-50 border-top">
+        <div class="container text-center">
+          <div class="row align-items-center">
+            <div class="col-sm-12">
+              <p class="mb-0">
+                <strong
+                  >Wayder Tech &reg;
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script></strong
+                ><br />J W DUTRA AREBA - TECNOLOGIA <br />CNPJ:
+                41.388.294/0001-58
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      href="#"
+      onclick="topFunction()"
+      id="back-to-top"
+      class="back-to-top fs-5"
+      ><i data-feather="arrow-up" class="fea icon-sm icons align-middle"></i
+    ></a>
+
+    <!-- Javascript -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
+    <script src="assets/libs/tobii/js/tobii.min.js"></script>
+    <script src="assets/libs/feather-icons/feather.min.js"></script>
+    <script src="assets/js/plugins.init.js"></script>
+    <script src="assets/js/app.js"></script>
   </body>
 </html>
